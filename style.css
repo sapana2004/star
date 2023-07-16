@@ -1,0 +1,103 @@
+:root {
+  --primary-color: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --l-gray: hsl(217, 12%, 63%);
+  --m-gray: hsl(216, 12%, 54%);
+  --d-blue: hsl(213, 19%, 18%);
+  --v-d-blue: hsl(216, 12%, 8%);
+
+  --font-size: 15px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+
+body {
+  background-color: var(--v-d-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 410px;
+  background-color: var(--d-blue);
+  border-radius: 10px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.star {
+  background: var(--v-d-blue);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  color: var(--white);
+}
+
+.description {
+  color: var(--l-gray);
+  line-height: 25px;
+}
+
+.values {
+  display: flex;
+  justify-content: space-between;
+}
+
+.value {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--v-d-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--l-gray);
+}
+
+.value:hover {
+  background-color: var(--m-gray);
+  color: white;
+  cursor: pointer;
+}
+
+.value:active {
+  background-color: var(--primary-color);
+}
+
+.btn {
+  display: block;
+  background-color: var(--primary-color);
+  color: var(--white);
+
+  text-decoration: none;
+  padding: 0.8rem;
+  text-align: center;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.btn:hover {
+  background-color: var(--white);
+  color: var(--primary-color);
+}
+
+.btn:active {
+  box-shadow: 0 0 5px var(--primary-color), 0 0 10px var(--primary-color);
+}
